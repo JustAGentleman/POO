@@ -1,6 +1,6 @@
 package mx.uv.facing.iinf.poo;
 
-public abstract class Profesor extends Persona {
+public abstract class Profesor extends Persona {    
     private String idProfesor;
 
     public String getIdProfesor() {
@@ -14,11 +14,11 @@ public abstract class Profesor extends Persona {
     public Profesor () {}
     
     public Profesor (String id, String n, String a, int e) {
-        setIdProfesor (id);
+        this.idProfesor = id;
         
-        setNombre(n);
-        setApellidos (a);
-        setEdad (e);
+        super.setNombre(n);
+        super.setApellidos (a);
+        super.setEdad (e);
     }
     
     public void mostrarDatos () {
@@ -30,6 +30,6 @@ public abstract class Profesor extends Persona {
         return String.format ("Profesor %s %s Edad %d", getNombre (), getApellidos (), getEdad ());
     }
     
-    public abstract float importNomina ();
+    public abstract float importeNomina ();
     
 }

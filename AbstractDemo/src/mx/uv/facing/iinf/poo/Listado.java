@@ -15,7 +15,15 @@ public class Listado {
     }
     
     void mostrarInterinos () {
-
+        for (Object item: listadoInterinos) {
+            System.out.println (item);
+        }
+    }
+    
+    void mostrarTitulares () {
+        for (Object item: listadoTitulares) {
+            System.out.println (item);
+        }
     }
     
 }
