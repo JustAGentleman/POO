@@ -3,8 +3,8 @@ package mx.uv.facing.iinf.poo;
 import java.util.ArrayList;
 
 public class Listado {
-    ArrayList listadoInterinos = new ArrayList ();
-    ArrayList listadoTitulares = new ArrayList ();
+    ArrayList<ProfesorInterino> listadoInterinos = new ArrayList<> ();
+    ArrayList<ProfesorTitular> listadoTitulares = new ArrayList<> ();
     
     public void addProfesorInterino (ProfesorInterino interino) {
         listadoInterinos.add (interino);
@@ -14,8 +14,17 @@ public class Listado {
         listadoTitulares.add (titular);
     }
     
+    
+    public void addProfesor (Profesor p) {
+       if (p instanceof ProfesorTitular)
+           listadoTitulares.add ((ProfesorTitular) p);
+       else
+           listadoInterinos.add ((ProfesorInterino) p);
+           
+    }
+    
     void mostrarInterinos () {
-        for (Object item: listadoInterinos) {
+        for (ProfesorInterino item: listadoInterinos) {
             System.out.println (item);
         }
     }

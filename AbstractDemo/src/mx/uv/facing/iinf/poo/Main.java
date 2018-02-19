@@ -84,7 +84,7 @@ public class Main {
         pt.setApellidos("Zamora");
         pt.setEdad (40);
         
-        listado.addProfesorTitular (pt);
+        listado.addProfesor (pt);
         
         listado.mostrarInterinos ();
         listado.mostrarTitulares ();
