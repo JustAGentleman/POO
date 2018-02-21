@@ -47,5 +47,9 @@ class Student {
 
     public void setLastName (String lastName) {
         this.lastName = lastName;
+        // String.format ("nombre: %s apellidos: %s, %d", this.name, this.lastName, this.edad);
     }   
+    
+    
+    
 }
