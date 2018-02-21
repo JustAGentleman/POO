@@ -14,7 +14,8 @@ public class Stack<T> {
     public void push (T item) {
         if (top == max) throw new Error ("Stack is full");
         
-        vector [top++] = item;
+        top++;
+        vector [top] = item;
     }
     
     public T pop () {

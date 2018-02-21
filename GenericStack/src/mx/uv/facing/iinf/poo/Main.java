@@ -8,10 +8,16 @@ public class Main {
         students.push (new Student ("Han", "Solo"));
         students.push (new Student ("Ben", "Solo"));
         
+        System.out.println (students.pop ());
+        System.out.println (students.pop ());
+        
         Stack<Integer> enteros = new Stack<> (3);
         enteros.push (7);
         enteros.push (10);
         enteros.push (24);
+        
+        System.out.println (enteros.pop ());
+        System.out.println (enteros.pop ());
     }
     
 }
